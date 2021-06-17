@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add_private_cuntr"
+        android:title="Özel Cuntr Ekle">
+
+    </item>
+    <item
+        android:id="@+id/add_shared_cuntr"
+        android:title="Paylaşımlı Cuntr Ekle">
+    </item>
+    <item
+        android:id="@+id/add_public_cuntr"
+        android:title="Açık Cuntr Ekle">
+    </item>
+    <item android:id="@+id/logout"
+        android:title="Logout">
+    </item>
+
+</menu>

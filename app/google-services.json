@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "859031369818",
+    "project_id": "cuntr-4fa7c",
+    "storage_bucket": "cuntr-4fa7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859031369818:android:7739f7de42e15fd480c063",
+        "android_client_info": {
+          "package_name": "com.canunaldi.cuntrapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "859031369818-k2tserbvaatfelrsiv6g2llqfhtrndvd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEhF8-Z2fIV04UM6AqCRrrwQVEC_rH6BM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "859031369818-k2tserbvaatfelrsiv6g2llqfhtrndvd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
