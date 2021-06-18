@@ -1,5 +1,5 @@
 # Cuntr-App
- Countr app is a social countdown app. The user can enter the application and
+ Cuntr app is a social countdown app. The user can enter the application and
 create private, shared or public countdowns. 
 Private countdowns are used for create reminders for users. Shared countdowns,
 on the other hand, are there for users to share and follow together
