@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,68 +9,89 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <EditText
-        android:id="@+id/txtTitlePC"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:ems="10"
-        android:hint="Başlık"
-        android:inputType="textPersonName"
-        android:paddingTop="50dp"
-        android:textSize="24sp" />
+    <ScrollView
+        android:id="@+id/scrollView3"
+        style="@android:style/Widget.Material.Light.ScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbarStyle="outsideOverlay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/txtDatePuC"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:gravity="center"
-        android:text="Tarih"
-        android:textSize="24sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btnPickDatePC"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:text="Tarih Seç" />
+            <EditText
+                android:id="@+id/txtTitlePC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:hint="Başlık"
+                android:inputType="textPersonName"
+                android:maxLength="20"
+                android:paddingTop="50dp"
+                android:textSize="24sp" />
 
-    <EditText
-        android:id="@+id/txtPlacePuC"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:ems="10"
-        android:hint="Konum"
-        android:inputType="textPersonName"
-        android:textSize="24sp" />
+            <TextView
+                android:id="@+id/txtDatePuC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="Tarih"
+                android:textSize="24sp" />
 
-    <EditText
-        android:id="@+id/txtLinkPuC"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:ems="10"
-        android:hint="Link(Eğer Yoksa - Koyun)"
-        android:inputType="textPersonName"
-        android:textSize="24sp" />
+            <Button
+                android:id="@+id/btnPickDatePC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Tarih Seç" />
 
-    <EditText
-        android:id="@+id/txtDescPuC"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="Açıklama"
-        android:inputType="textMultiLine"
-        android:textSize="24sp" />
+            <EditText
+                android:id="@+id/txtPlacePuC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:hint="Konum"
+                android:inputType="textPersonName"
+                android:textSize="24sp" />
 
-    <Button
-        android:id="@+id/btnSubmitPuC"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:text="Kaydet" />
-</LinearLayout>
+            <EditText
+                android:id="@+id/txtLinkPuC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:hint="Link(Eğer Yoksa - Koyun)"
+                android:inputType="textPersonName"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/txtDescPuC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Açıklama"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnSubmitPuC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Kaydet" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
